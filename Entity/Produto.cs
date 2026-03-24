@@ -46,6 +46,6 @@ class Produto
     
     public override string ToString()
     {
-        return $"Produto: {nome},\nPreço Unitário: {precoUnitario},";
+        return $"Produto: {nome}\nPreço Unitário: {precoUnitario}";
     }
 }

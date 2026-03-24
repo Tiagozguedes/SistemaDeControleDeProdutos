@@ -28,49 +28,51 @@ class Program
                     throw new ProdutoInvalidoException("Quantidade inválida.");
                 }
 
-                Console.WriteLine("Digite o desconto:");
-                int desconto;
-                if (!int.TryParse(Console.ReadLine(), out desconto))
-                {
-                    throw new ProdutoInvalidoException("Desconto inválido.");
-                }
-
                 Produto produto = new Produto(nomeProduto, precoUnitario);
 
                 double custoTotal = produto.calcularPrecoTotal(quantidade);
 
-                if (contador == 0)
-                    produto1 = produto;
-                else
-                    produto2 = produto;
+                int desconto = 0;
+                if (custoTotal > 5000.00)
+                {
+                    Console.WriteLine("Digite o desconto:");
+                    if (!int.TryParse(Console.ReadLine(), out desconto))
+                    {
+                        throw new ProdutoInvalidoException("Desconto inválido.");
+                    }
+                }
 
-                produto.calcularCustoFinal(custoTotal, quantidade, desconto);
+                    if (contador == 0)
+                        produto1 = produto;
+                    else
+                        produto2 = produto;
 
-                Console.WriteLine(produto);
-                Console.WriteLine($"Custo total: {custoTotal}");
-                Console.WriteLine($"Custo final: {produto.calcularCustoFinal(custoTotal, quantidade, desconto)}");
-                Console.WriteLine($"Desconto: {desconto}%");
-                Console.WriteLine($"Quantidade: {quantidade}");
+                    Console.WriteLine(produto);
 
-                contador++;
+                    Console.WriteLine($"Custo total: {custoTotal}");
+                    Console.WriteLine($"Custo final: {produto.calcularCustoFinal(custoTotal, quantidade, desconto)}");
+                    Console.WriteLine($"Desconto: {desconto}%");
+                    Console.WriteLine($"Quantidade: {quantidade}");
+
+                    contador++;
+                }
+
+                if (produto1 != null && produto2 != null)
+                {
+                    if (produto1.PrecoUnitario > produto2.PrecoUnitario)
+                    {
+                        Console.WriteLine($"Produto mais caro: {produto1.Nome} - Preço: {produto1.PrecoUnitario}");
+                    }
+                    else if (produto2.PrecoUnitario > produto1.PrecoUnitario)
+                    {
+                        Console.WriteLine($"Produto mais caro: {produto2.Nome} - Preço: {produto2.PrecoUnitario}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Os produtos tem o mesmo preço: {produto1.Nome} e {produto2.Nome} - Preço: {produto1.PrecoUnitario}");
+                    }
+                }
             }
-
-            if (produto1 != null && produto2 != null)
-            {
-                if (produto1.PrecoUnitario > produto2.PrecoUnitario)
-                {
-                    Console.WriteLine($"Produto mais caro: {produto1.Nome} - Preço: {produto1.PrecoUnitario}");
-                }
-                else if (produto2.PrecoUnitario > produto1.PrecoUnitario)
-                {
-                    Console.WriteLine($"Produto mais caro: {produto2.Nome} - Preço: {produto2.PrecoUnitario}");
-                }
-                else
-                {
-                    Console.WriteLine($"Os produtos têm o mesmo preço: {produto1.Nome} e {produto2.Nome} - Preço: {produto1.PrecoUnitario}");
-                }
-            }
-        }
         catch (ProdutoInvalidoException ex)
         {
             Console.WriteLine($"Erro de produto: {ex.Message}");
@@ -81,3 +83,4 @@ class Program
         }
     }
 }
+

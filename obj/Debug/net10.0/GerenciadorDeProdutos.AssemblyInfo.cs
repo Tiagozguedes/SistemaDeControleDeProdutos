@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GerenciadorDeProdutos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4b26e0dc18521fe58551ed11b1de7eea50a7b43")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa47d2e72c1ba41efc25e621d819c755f544bb82")]
 [assembly: System.Reflection.AssemblyProductAttribute("GerenciadorDeProdutos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GerenciadorDeProdutos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
