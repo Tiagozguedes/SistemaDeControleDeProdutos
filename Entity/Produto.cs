@@ -1,4 +1,6 @@
-﻿class Produto
+﻿using System.Security.AccessControl;
+
+class Produto
 {
     private string nome;
     private double precoUnitario;
@@ -27,16 +29,23 @@
         return custoTotal;
     }
 
-    public double calcularCustoFinal(int quantidade, int desconto)
+    public double calcularCustoFinal(double custoTotal,int quantidade, int desconto)
     {
-        double custoTotal = calcularPrecoTotal(quantidade);
-        double custoFinal = custoTotal - (custoTotal * (desconto / 100.0));
-        return custoFinal;
+        double custoFinal = 0.0;
+        if (custoTotal > 5000.00)
+        {
+           return custoFinal = custoTotal - (custoTotal * (desconto / 100.0));
+        }
+        else
+        {
+            return custoTotal;
+        }
+        
     }
 
     
     public override string ToString()
     {
-        return $"Produto: {nome},\nPreço Unitário: {precoUnitario}";
+        return $"Produto: {nome},\nPreço Unitário: {precoUnitario},";
     }
 }

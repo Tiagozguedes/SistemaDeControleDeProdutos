@@ -1,0 +1,15 @@
+C:\Users\bmace\OneDrive\Desktop\Tiago\GerenciadorDeProdutos\GerenciadorDeProdutos\bin\Debug\net10.0\GerenciadorDeProdutos.exe
+C:\Users\bmace\OneDrive\Desktop\Tiago\GerenciadorDeProdutos\GerenciadorDeProdutos\bin\Debug\net10.0\GerenciadorDeProdutos.deps.json
+C:\Users\bmace\OneDrive\Desktop\Tiago\GerenciadorDeProdutos\GerenciadorDeProdutos\bin\Debug\net10.0\GerenciadorDeProdutos.runtimeconfig.json
+C:\Users\bmace\OneDrive\Desktop\Tiago\GerenciadorDeProdutos\GerenciadorDeProdutos\bin\Debug\net10.0\GerenciadorDeProdutos.dll
+C:\Users\bmace\OneDrive\Desktop\Tiago\GerenciadorDeProdutos\GerenciadorDeProdutos\bin\Debug\net10.0\GerenciadorDeProdutos.pdb
+C:\Users\bmace\OneDrive\Desktop\Tiago\GerenciadorDeProdutos\GerenciadorDeProdutos\obj\Debug\net10.0\GerenciadorDeProdutos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bmace\OneDrive\Desktop\Tiago\GerenciadorDeProdutos\GerenciadorDeProdutos\obj\Debug\net10.0\GerenciadorDeProdutos.AssemblyInfoInputs.cache
+C:\Users\bmace\OneDrive\Desktop\Tiago\GerenciadorDeProdutos\GerenciadorDeProdutos\obj\Debug\net10.0\GerenciadorDeProdutos.AssemblyInfo.cs
+C:\Users\bmace\OneDrive\Desktop\Tiago\GerenciadorDeProdutos\GerenciadorDeProdutos\obj\Debug\net10.0\GerenciadorDeProdutos.csproj.CoreCompileInputs.cache
+C:\Users\bmace\OneDrive\Desktop\Tiago\GerenciadorDeProdutos\GerenciadorDeProdutos\obj\Debug\net10.0\GerenciadorDeProdutos.sourcelink.json
+C:\Users\bmace\OneDrive\Desktop\Tiago\GerenciadorDeProdutos\GerenciadorDeProdutos\obj\Debug\net10.0\GerenciadorDeProdutos.dll
+C:\Users\bmace\OneDrive\Desktop\Tiago\GerenciadorDeProdutos\GerenciadorDeProdutos\obj\Debug\net10.0\refint\GerenciadorDeProdutos.dll
+C:\Users\bmace\OneDrive\Desktop\Tiago\GerenciadorDeProdutos\GerenciadorDeProdutos\obj\Debug\net10.0\GerenciadorDeProdutos.pdb
+C:\Users\bmace\OneDrive\Desktop\Tiago\GerenciadorDeProdutos\GerenciadorDeProdutos\obj\Debug\net10.0\GerenciadorDeProdutos.genruntimeconfig.cache
+C:\Users\bmace\OneDrive\Desktop\Tiago\GerenciadorDeProdutos\GerenciadorDeProdutos\obj\Debug\net10.0\ref\GerenciadorDeProdutos.dll

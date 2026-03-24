@@ -1,13 +1,9 @@
-using System;
-using System.Collections.Generic;
-
 class Program
 {
     static void Main(string[] args)
     {
         try
         {
-            double produtoMaisCaro = 0;
             Produto produto1 = null;
             Produto produto2 = null;
 
@@ -41,39 +37,20 @@ class Program
 
                 Produto produto = new Produto(nomeProduto, precoUnitario);
 
-                if (produto == null)
-                {
-                    throw new ProdutoInvalidoException("Produto inválido.");
-                }
-
                 double custoTotal = produto.calcularPrecoTotal(quantidade);
 
                 if (contador == 0)
-                {
                     produto1 = produto;
-                }
                 else
-                {
                     produto2 = produto;
-                }
 
-                List<Produto> produtos = new List<Produto>();
-                produtos.Add(produto1);
-                produtos.Add(produto2);
-
-                if (desconto > 5000.00)
-                {
-                    double custoFinal = produto.calcularCustoFinal(quantidade, desconto);
-                    Console.WriteLine($"Custo Total: {custoTotal}");
-                    Console.WriteLine($"Custo Final: {custoFinal}");
-                }
-                else
-                {
-                    Console.WriteLine("Sem desconto aplicado.");
-                    Console.WriteLine($"Custo Total: {custoTotal}");
-                }
+                produto.calcularCustoFinal(custoTotal, quantidade, desconto);
 
                 Console.WriteLine(produto);
+                Console.WriteLine($"Custo total: {custoTotal}");
+                Console.WriteLine($"Custo final: {produto.calcularCustoFinal(custoTotal, quantidade, desconto)}");
+                Console.WriteLine($"Desconto: {desconto}%");
+                Console.WriteLine($"Quantidade: {quantidade}");
 
                 contador++;
             }
